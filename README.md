@@ -86,4 +86,4 @@ This project references the following resources:
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/YourUsername/Car-Cost-Estimator.git
+   git clone https:///github.com/GeorgeCarr1337/CarCostCalculator
