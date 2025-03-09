@@ -1,51 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding and responsive design for mobile compatibility -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title displayed in the browser tab -->
     <title>Car Running Cost Estimator</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Linking external JavaScript file (loaded after HTML) and external CSS file -->
     <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Header section with the page title -->
     <header>
         <h1>Car Running Cost Estimator</h1>
     </header>
 
     <main>
+        <!-- Main form where users enter their details for cost estimation -->
         <form id="cost-form" aria-labelledby="form-title">
+            <!-- Hidden heading to improve accessibility (screen readers) -->
             <h2 id="form-title" class="visually-hidden">Car Running Cost Estimator Form</h2>
 
-            <!-- Age Input -->
+            <!-- Age input field with description for screen readers -->
             <label for="age">Your Age:</label>
             <input type="number" id="age" name="age" min="18" max="100" required aria-describedby="age-description">
+            <!-- Hidden description for the age input, accessible for screen readers -->
             <div id="age-description" class="visually-hidden">Please enter your age between 18 and 100 years old.</div>
             
-            <!-- Mileage Input -->
+            <!-- Mileage input field with description for screen readers -->
             <label for="mileage">Annual Mileage:</label>
             <input type="number" id="mileage" name="mileage" min="500" required aria-describedby="mileage-description">
+            <!-- Hidden description for the mileage input, accessible for screen readers -->
             <div id="mileage-description" class="visually-hidden">Please enter your annual mileage (at least 500 miles).</div>
 
-            <!-- Car Select -->
+            <!-- Car selection dropdown where users pick a car -->
             <label for="car-select">Select a Car:</label>
             <select id="car-select" aria-describedby="car-select-description">
                 <option value="">Choose a car...</option>
+                <!-- Additional options will be populated dynamically by JavaScript -->
             </select>
+            <!-- Hidden description for the car selection, accessible for screen readers -->
             <div id="car-select-description" class="visually-hidden">Please select a car from the list to view details.</div>
 
-            <!-- Car Details Section -->
+            <!-- Car details section (hidden until a car is selected) -->
             <div id="car-details" role="region" aria-labelledby="car-details-heading" aria-hidden="true">
                 <h2 id="car-details-heading">Car Details</h2>
+                <!-- Displaying selected car's MPG -->
                 <p><strong>MPG:</strong> <span id="car-mpg"></span></p>
+                <!-- Displaying selected car's annual road tax -->
                 <p><strong>Annual Road Tax:</strong> £<span id="car-tax"></span></p>
+                <!-- Displaying selected car's insurance group -->
                 <p><strong>Insurance Group:</strong> <span id="car-insurance"></span></p>
+                <!-- Image of the selected car (hidden initially) -->
                 <img id="car-image" src="" alt="Selected car image" hidden>
             </div>
 
+            <!-- Submit button to calculate running costs -->
             <button type="submit" aria-label="Calculate your car's running costs">Calculate Costs</button>
         </form>
 
+        <!-- Section to display the results of the calculation -->
         <div id="result" role="alert" aria-live="assertive"></div>
     </main>
 
