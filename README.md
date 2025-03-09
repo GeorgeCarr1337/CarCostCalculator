@@ -50,7 +50,9 @@ The tool helps new drivers and car buyers quickly assess potential costs before 
 ---
 
 ## 🎨 Wireframe  
-*(Attach images of the wireframe or sketches here.)*  
+
+- **[Flowchart Diagram](https://github.com/GeorgeCarr1337/CarCostCalculator/Flowchart.jpg)**  
+- **[Screen Design Layout](https://github.com/GeorgeCarr1337/CarCostCalculator/ScreenDesign.jpg)**  
 
 ---
 
