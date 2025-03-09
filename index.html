@@ -14,30 +14,39 @@
     </header>
 
     <main>
-        <form id="cost-form">
+        <form id="cost-form" aria-labelledby="form-title">
+            <h2 id="form-title" class="visually-hidden">Car Running Cost Estimator Form</h2>
+
+            <!-- Age Input -->
             <label for="age">Your Age:</label>
-            <input type="number" id="age" name="age" min="18" max="100" required>
+            <input type="number" id="age" name="age" min="18" max="100" required aria-describedby="age-description">
+            <div id="age-description" class="visually-hidden">Please enter your age between 18 and 100 years old.</div>
             
+            <!-- Mileage Input -->
             <label for="mileage">Annual Mileage:</label>
-            <input type="number" id="mileage" name="mileage" min="500" required>
-            
+            <input type="number" id="mileage" name="mileage" min="500" required aria-describedby="mileage-description">
+            <div id="mileage-description" class="visually-hidden">Please enter your annual mileage (at least 500 miles).</div>
+
+            <!-- Car Select -->
             <label for="car-select">Select a Car:</label>
-            <select id="car-select">
+            <select id="car-select" aria-describedby="car-select-description">
                 <option value="">Choose a car...</option>
             </select>
+            <div id="car-select-description" class="visually-hidden">Please select a car from the list to view details.</div>
 
-            <div id="car-details">
-                <h2>Car Details</h2>
+            <!-- Car Details Section -->
+            <div id="car-details" role="region" aria-labelledby="car-details-heading" aria-hidden="true">
+                <h2 id="car-details-heading">Car Details</h2>
                 <p><strong>MPG:</strong> <span id="car-mpg"></span></p>
                 <p><strong>Annual Road Tax:</strong> £<span id="car-tax"></span></p>
                 <p><strong>Insurance Group:</strong> <span id="car-insurance"></span></p>
-                <img id="car-image" src="" alt="Car Image" hidden>
+                <img id="car-image" src="" alt="Selected car image" hidden>
             </div>
 
-            <button type="submit">Calculate Costs</button>
+            <button type="submit" aria-label="Calculate your car's running costs">Calculate Costs</button>
         </form>
 
-        <div id="result"></div>
+        <div id="result" role="alert" aria-live="assertive"></div>
     </main>
 
 </body>
