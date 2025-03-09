@@ -1,6 +1,16 @@
 const cars = [
-    { name: "Toyota Corolla", mpg: 30, tax: 150, insuranceGroup: 10, img: "toyota-corolla.jpg" },
-    { name: "Honda Civic", mpg: 32, tax: 120, insuranceGroup: 12, img: "honda-civic.jpg" }
+    { name: "Ford Fiesta", mpg: 40, tax: 145, insuranceGroup: 5, img: "images/ford-fiesta.jpg" },
+    { name: "Vauxhall Corsa", mpg: 45, tax: 130, insuranceGroup: 6, img: "images/vauxhall-corsa.jpg" },
+    { name: "Volkswagen Polo", mpg: 48, tax: 150, insuranceGroup: 8, img: "images/vw-polo.jpg" },
+    { name: "Renault Clio", mpg: 50, tax: 135, insuranceGroup: 7, img: "images/renault-clio.jpg" },
+    { name: "Peugeot 208", mpg: 52, tax: 120, insuranceGroup: 9, img: "images/peugeot-208.jpg" },
+    { name: "Mini Cooper", mpg: 38, tax: 160, insuranceGroup: 12, img: "images/mini-cooper.jpg" },
+    // Sports Cars
+    { name: "Mazda MX-5", mpg: 35, tax: 180, insuranceGroup: 25, img: "images/mazda-mx5.jpg" },
+    { name: "Ford Mustang (EcoBoost)", mpg: 28, tax: 290, insuranceGroup: 35, img: "images/ford-mustang.jpg" },
+    // Supercars
+    { name: "Lamborghini Huracán", mpg: 15, tax: 570, insuranceGroup: 50, img: "images/lamborghini-huracan.jpg" },
+    { name: "Ferrari 488 GTB", mpg: 18, tax: 600, insuranceGroup: 50, img: "images/ferrari-488.jpg" }
 ];
 
 // Populate car dropdown
