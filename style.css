@@ -1,93 +1,93 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f4f0;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    font-family: Arial, sans-serif; /* Basic font */
+    background-color: #f8f4f0; /* Light background color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    min-height: 100vh; /* Ensure full height */
 }
 
 /* Header Styling */
 header {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: center; /* Center header text */
+    margin-bottom: 20px; /* Add space below header */
 }
 
 /* Main Form Styling */
 main {
     width: 90%; /* Responsive width */
-    max-width: 600px; /* Maximum form size */
-    min-width: 320px; /* Minimum form size */
-    background-color: #d2b48c; /* Light brown */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Max width for larger screens */
+    min-width: 320px; /* Min width for smaller screens */
+    background-color: #d2b48c; /* Light brown background */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
 /* Form Layout */
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px; /* Proper spacing between elements */
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Stack form elements */
+    gap: 15px; /* Space between elements */
 }
 
 /* Labels and Inputs */
 label {
-    font-weight: bold;
+    font-weight: bold; /* Bold labels */
 }
 
 input, select {
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #8b5e3b; /* Darker brown border */
-    border-radius: 5px;
+    padding: 8px; /* Padding inside input fields */
+    font-size: 16px; /* Font size for input text */
+    border: 1px solid #8b5e3b; /* Dark brown border */
+    border-radius: 5px; /* Rounded corners for inputs */
 }
 
 /* Button Styling */
 button {
-    background-color: #8b5e3b; /* Dark brown */
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
+    background-color: #8b5e3b; /* Dark brown button */
+    color: white; /* White text */
+    padding: 10px; /* Padding inside the button */
+    font-size: 16px; /* Font size for button text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: 0.3s; /* Smooth transition for hover effect */
 }
 
 button:hover {
-    background-color: #5e3b1d; /* Even darker brown */
+    background-color: #5e3b1d; /* Darker brown when hovering */
 }
 
 /* Car Details Styling */
 #car-details {
     background-color: #f5deb3; /* Wheat color for contrast */
-    padding: 15px;
-    border-radius: 8px;
+    padding: 15px; /* Padding around car details */
+    border-radius: 8px; /* Rounded corners */
     display: none; /* Hidden until a car is selected */
 }
 
 /* Responsive Car Image */
 #car-image {
-    max-width: 100%; /* Make sure the image is responsive */
-    height: auto;
-    display: block; /* Ensure the image is always displayed properly */
-    margin-top: 10px;
-    border-radius: 5px;
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Block display */
+    margin-top: 10px; /* Space above the image */
+    border-radius: 5px; /* Rounded corners for image */
 }
 
-/* Visually hidden but accessible to screen readers */
+/* Visually Hidden Elements */
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
+    position: absolute; /* Remove element from layout */
+    width: 1px; /* Hide element visually */
+    height: 1px; /* Hide element visually */
+    margin: -1px; /* Remove margin */
+    padding: 0; /* Remove padding */
+    border: 0; /* Remove border */
+    clip: rect(0, 0, 0, 0); /* Clip content */
+    overflow: hidden; /* Hide overflow */
 }
